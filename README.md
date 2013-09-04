@@ -2,7 +2,7 @@ Arise Phonegap plugin documentation
 =====================================
 
 The plugin documentation is available at:  
-http://arise.readthedocs.org
+http://arise.readthedocs.org/en/latest/phonegap.html
 
 This plugin let you use the Arise service through phonegap to perform A/B testing.  
 
