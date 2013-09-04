@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="io.arise"
+    version="2.6.0">
+
+	<engines>
+	    <engine name="cordova" version=">=3.0.0" />
+	</engines>
+	
+	<name>Arise</name>
+	
+	<description>This plugin lets your implement A/B testing through Arise.io in your app.</description>
+	<author>Arise.io - Guillaume Charhon</author>
+	<keywords>testing,tests,conversions,split,a/b,ab</keywords>
+	<license>MIT license</license>
+	
+	<js-module src="www/arise.js" name="arise">
+	    <clobbers target="arise" />
+	</js-module>
+	
+	<platform name="android">
+	    <!-- android-specific elements -->
+	    <!-- Arise SDK -->
+		<source-file src="libs/android/Arise-Android-2.6.jar" target-dir="libs" />
+		<!-- Phonegap java -->
+		<source-file src="src/android/ArisePlugin.java" target-dir="src/io/arise" />
+		
+		<config-file target="res/xml/config.xml" parent="/*">
+		            <feature name="ArisePlugin">
+					        <param name="android-package" value="io.arise.ArisePlugin"/>
+					 </feature>
+		</config-file>
+	</platform>
+	
+	<info>
+	Happy testing. Drop us a message on contact@arise.io if you encounter any issue.
+	</info>
+</plugin>
+	
+	
+	
