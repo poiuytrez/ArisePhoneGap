@@ -32,6 +32,21 @@
 					 </feature>
 		</config-file>
 	</platform>
+    <platform name="ios">
+        <!-- ios-specific elements -->
+        <framework src="libsqlite3.dylib" />
+
+        <!-- Phoegap plugin-->
+		<header-file src="src/ios/ArisePlugin.h"/>
+        <source-file src="src/ios/ArisePlugin.m"/>
+
+		
+		<config-file target="config.xml" parent="/*">
+            <feature name="ArisePlugin">
+                <param name="ios-package" value="ArisePlugin"/>
+            </feature>
+		</config-file>
+	</platform>
 	
 	<info>
 	Happy testing. Drop us a message on contact@arise.io if you encounter any issue.
