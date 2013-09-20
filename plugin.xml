@@ -3,6 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="io.arise"
     version="2.6.0">
+    
+    	<gap:plugin name="io.arise" />
 
 	<engines>
 	    <engine name="cordova" version=">=3.0.0" />
